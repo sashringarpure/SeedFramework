@@ -1,0 +1,62 @@
+qc3:
+   /partnerid/12815:
+                   Discover:
+                        creditCardNumber: 6011016011016011
+                        expiryMonth: 12
+                        expiryYear: 20
+                        securityCode: 123
+   /partnerid/12730:
+                   Discover:
+                        creditCardNumber: 6011016011016011
+                        expiryMonth: 12
+                        expiryYear: 20
+                        securityCode: 123
+   /partnerid/13670:
+                   Discover:
+                        creditCardNumber: 6011016011016011
+                        expiryMonth: 12
+                        expiryYear: 20
+                        securityCode: 123
+   /partnerid/14251:
+                   Discover:
+                        creditCardNumber: 6011016011016011
+                        expiryMonth: 12
+                        expiryYear: 20
+                        securityCode: 123
+   /partnerid/10005:
+                   Discover:
+                        creditCardNumber: 6011016011016011
+                        expiryMonth: 12
+                        expiryYear: 20
+                        securityCode: 123
+qc2:
+   /partnerid/12815:
+                   Discover:
+                        creditCardNumber: 6011016011016011
+                        expiryMonth: 12
+                        expiryYear: 20
+                        securityCode: 123
+   /partnerid/12730:
+                   Discover:
+                        creditCardNumber: 6011016011016011
+                        expiryMonth: 12
+                        expiryYear: 20
+                        securityCode: 123
+   /partnerid/13670:
+                   Discover:
+                        creditCardNumber: 6011016011016011
+                        expiryMonth: 12
+                        expiryYear: 20
+                        securityCode: 123
+   /partnerid/14251:
+                   Discover:
+                        creditCardNumber: 6011016011016011
+                        expiryMonth: 12
+                        expiryYear: 20
+                        securityCode: 123
+   /partnerid/10005:
+                   Discover:
+                        creditCardNumber: 6011016011016011
+                        expiryMonth: 12
+                        expiryYear: 20
+                        securityCode: 123                        

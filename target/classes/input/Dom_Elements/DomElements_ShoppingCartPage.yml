@@ -1,0 +1,22 @@
+qc3:
+   /partnerid/12815:
+                   secureCheckoutNow: //*[@class="cartHeaderRight"]/child::a[2]
+   /partnerid/12730:
+                   secureCheckoutNow: //*[@class="cartHeaderRight"]/child::a[2]
+   /partnerid/13670:
+                   secureCheckoutNow: //*[@id="cartHeaderCheckoutButton"]
+   /partnerid/14251:
+                   secureCheckoutNow: //*[@class="cartHeaderRight"]/child::a[2]
+   /partnerid/10005:
+                   secureCheckoutNow: //*[@class="cartHeaderRight"]/child::a[2]
+qc2:
+   /partnerid/12815:
+                   secureCheckoutNow: //*[@class="cartHeaderRight"]/child::a[2]
+   /partnerid/12730:
+                   secureCheckoutNow: //*[@class="cartHeaderRight"]/child::a[2]
+   /partnerid/13670:
+                   secureCheckoutNow: //*[@id="cartHeaderCheckoutButton"]
+   /partnerid/14251:
+                   secureCheckoutNow: //*[@class="cartHeaderRight"]/child::a[2]
+   /partnerid/10005:
+                   secureCheckoutNow: //*[@class="cartHeaderRight"]/child::a[2]                   

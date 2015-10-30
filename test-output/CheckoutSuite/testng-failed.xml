@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [CheckoutSuite]">
+  <test name="Checkout(failed)">
+    <classes>
+      <class name="Specs.Checkout">
+        <methods>
+          <include name="navigateToHomePage"/>
+          <include name="checkOut" invocation-numbers="0"/>
+          <include name="getEnvDetails"/>
+        </methods>
+      </class> <!-- Specs.Checkout -->
+    </classes>
+  </test> <!-- Checkout(failed) -->
+</suite> <!-- Failed suite [CheckoutSuite] -->

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="0" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="5606" started-at="2015-08-27T23:57:17Z" finished-at="2015-08-27T23:57:23Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="5606" started-at="2015-08-27T23:57:17Z" finished-at="2015-08-27T23:57:23Z">
+      <class name="Specs.Checkout">
+        <test-method status="PASS" signature="getEnvDetails()[pri:0, instance:Specs.Checkout@2344fc66]" name="getEnvDetails" is-config="true" duration-ms="80" started-at="2015-08-27T16:57:17Z" finished-at="2015-08-27T16:57:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getEnvDetails -->
+        <test-method status="PASS" signature="navigateToHomePageForBrowserStack()[pri:0, instance:Specs.Checkout@2344fc66]" name="navigateToHomePageForBrowserStack" is-config="true" duration-ms="5602" started-at="2015-08-27T16:57:17Z" finished-at="2015-08-27T16:57:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToHomePageForBrowserStack -->
+      </class> <!-- Specs.Checkout -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

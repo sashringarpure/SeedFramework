@@ -1,0 +1,5 @@
+"ResponseAddresses.StreetAddress"="[[1330 VALLEY LAKE DR, APT 107]]"
+"ResponseAddresses.City"="[SCHAUMBURG]"
+"ResponseAddresses.StateOrProvinceCode"="[IL]"
+"ResponseAddresses.PostalCode"="[60195-3624]"
+"ResponseAddresses.CountryCode"="[US]"

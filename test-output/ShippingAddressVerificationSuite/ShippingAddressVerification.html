@@ -1,0 +1,1351 @@
+<html>
+<head>
+<title>TestNG:  ShippingAddressVerification</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>ShippingAddressVerification</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/15/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Jul 15 10:57:37 PDT 2015</td>
+</tr>
+<tr><td>Total time:</td><td>7 seconds (7053 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='API.ShippingAddressVerification.ShippingAddressResponseTagsVerification()'><b>ShippingAddressResponseTagsVerification</b><br>Test class: API.ShippingAddressVerification<br>Parameters: { "ClientTransactionId":"test1234", "Address":{"AddressReferenceId":"141414", "StreetAddress":["1330 Valley lake Drive", "Apt 107"],"City":"Schaumburg", "StateOrProvinceCode":"IL","PostalCode":"60195","CountryCode":"US", "CountryName":"UnitedStates"}}, "ResponseAddresses.StreetAddress"="[1330 VALLEY LAKE DR, APT 107]"</td>
+<td><div><pre>com.jayway.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
+	at com.jayway.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:915)
+	at com.jayway.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:880)
+	at com.jayway.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:959)
+	at com.jayway.restassured.path.json.JsonPath.get(JsonPath.java:201)
+	at com.fanatics.seed.RestAssured.PostRequestUsingJson(RestAssured.java:272)
+	at API.ShippingAddressVerification.ShippingAddressResponseTagsVerification(ShippingAddressVerification.java:133)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading &apos;&lt;&apos;, no possible valid JSON value or punctuation could be recognized.
+	at groovy.json.JsonLexer.nextToken(JsonLexer.java:82)
+	at groovy.json.JsonLexer$nextToken.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:110)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:114)
+	at com.jayway.restassured.internal.path.json.ConfigurableJsonSlurper.parse(ConfigurableJsonSlurper.groovy:99)
+	at com.jayway.restassured.internal.path.json.ConfigurableJsonSlurper$parse.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:151)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:163)
+	at com.jayway.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.groovy:85)
+	at com.jayway.restassured.path.json.JsonPath$4$1.method(JsonPath.java:878)
+	at com.jayway.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:913)
+	... 25 more
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2040530558", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2040530558'><pre>com.jayway.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
+	at com.jayway.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:915)
+	at com.jayway.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:880)
+	at com.jayway.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:959)
+	at com.jayway.restassured.path.json.JsonPath.get(JsonPath.java:201)
+	at com.fanatics.seed.RestAssured.PostRequestUsingJson(RestAssured.java:272)
+	at API.ShippingAddressVerification.ShippingAddressResponseTagsVerification(ShippingAddressVerification.java:133)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:38)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:391)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading &apos;&lt;&apos;, no possible valid JSON value or punctuation could be recognized.
+	at groovy.json.JsonLexer.nextToken(JsonLexer.java:82)
+	at groovy.json.JsonLexer$nextToken.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:110)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:114)
+	at com.jayway.restassured.internal.path.json.ConfigurableJsonSlurper.parse(ConfigurableJsonSlurper.groovy:99)
+	at com.jayway.restassured.internal.path.json.ConfigurableJsonSlurper$parse.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:151)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:163)
+	at com.jayway.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.groovy:85)
+	at com.jayway.restassured.path.json.JsonPath$4$1.method(JsonPath.java:878)
+	at com.jayway.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:913)
+	... 25 more
+</pre></div></td>
+<td>1</td>
+<td>API.ShippingAddressVerification@1efbd816</td></tr>
+<tr>
+<td title='API.ShippingAddressVerification.ShippingAddressResponseTagsVerification()'><b>ShippingAddressResponseTagsVerification</b><br>Test class: API.ShippingAddressVerification<br>Parameters: { "ClientTransactionId":"test1234", "Address":{"AddressReferenceId":"141414", "StreetAddress":["1330 Valley lake Drive", "Apt 107"],"City":"Schaumburg", "StateOrProvinceCode":"IL","PostalCode":"60195","CountryCode":"US", "CountryName":"UnitedStates"}}, "ResponseAddresses.City"="[SCHAUMBURG]"</td>
+<td><div><pre>com.jayway.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
+	at com.jayway.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:915)
+	at com.jayway.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:880)
+	at com.jayway.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:959)
+	at com.jayway.restassured.path.json.JsonPath.get(JsonPath.java:201)
+	at com.fanatics.seed.RestAssured.PostRequestUsingJson(RestAssured.java:272)
+	at API.ShippingAddressVerification.ShippingAddressResponseTagsVerification(ShippingAddressVerification.java:133)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading &apos;&lt;&apos;, no possible valid JSON value or punctuation could be recognized.
+	at groovy.json.JsonLexer.nextToken(JsonLexer.java:82)
+	at groovy.json.JsonLexer$nextToken.call(Unknown Source)
+	at com.jayway.restassured.internal.path.json.ConfigurableJsonSlurper.parse(ConfigurableJsonSlurper.groovy:99)
+	at com.jayway.restassured.internal.path.json.ConfigurableJsonSlurper$parse.callCurrent(Unknown Source)
+	at com.jayway.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.groovy:85)
+	at com.jayway.restassured.path.json.JsonPath$4$1.method(JsonPath.java:878)
+	at com.jayway.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:913)
+	... 25 more
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace261715948", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace261715948'><pre>com.jayway.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
+	at com.jayway.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:915)
+	at com.jayway.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:880)
+	at com.jayway.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:959)
+	at com.jayway.restassured.path.json.JsonPath.get(JsonPath.java:201)
+	at com.fanatics.seed.RestAssured.PostRequestUsingJson(RestAssured.java:272)
+	at API.ShippingAddressVerification.ShippingAddressResponseTagsVerification(ShippingAddressVerification.java:133)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:38)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:391)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading &apos;&lt;&apos;, no possible valid JSON value or punctuation could be recognized.
+	at groovy.json.JsonLexer.nextToken(JsonLexer.java:82)
+	at groovy.json.JsonLexer$nextToken.call(Unknown Source)
+	at com.jayway.restassured.internal.path.json.ConfigurableJsonSlurper.parse(ConfigurableJsonSlurper.groovy:99)
+	at com.jayway.restassured.internal.path.json.ConfigurableJsonSlurper$parse.callCurrent(Unknown Source)
+	at com.jayway.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.groovy:85)
+	at com.jayway.restassured.path.json.JsonPath$4$1.method(JsonPath.java:878)
+	at com.jayway.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:913)
+	... 25 more
+</pre></div></td>
+<td>0</td>
+<td>API.ShippingAddressVerification@1efbd816</td></tr>
+<tr>
+<td title='API.ShippingAddressVerification.ShippingAddressResponseTagsVerification()'><b>ShippingAddressResponseTagsVerification</b><br>Test class: API.ShippingAddressVerification<br>Parameters: { "ClientTransactionId":"test1234", "Address":{"AddressReferenceId":"141414", "StreetAddress":["1330 Valley lake Drive", "Apt 107"],"City":"Schaumburg", "StateOrProvinceCode":"IL","PostalCode":"60195","CountryCode":"US", "CountryName":"UnitedStates"}}, "ResponseAddresses.StateOrProvinceCode"="[IL]"</td>
+<td><div><pre>com.jayway.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
+	at com.jayway.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:915)
+	at com.jayway.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:880)
+	at com.jayway.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:959)
+	at com.jayway.restassured.path.json.JsonPath.get(JsonPath.java:201)
+	at com.fanatics.seed.RestAssured.PostRequestUsingJson(RestAssured.java:272)
+	at API.ShippingAddressVerification.ShippingAddressResponseTagsVerification(ShippingAddressVerification.java:133)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading &apos;&lt;&apos;, no possible valid JSON value or punctuation could be recognized.
+	at groovy.json.JsonLexer.nextToken(JsonLexer.java:82)
+	at groovy.json.JsonLexer$nextToken.call(Unknown Source)
+	at com.jayway.restassured.internal.path.json.ConfigurableJsonSlurper.parse(ConfigurableJsonSlurper.groovy:99)
+	at com.jayway.restassured.internal.path.json.ConfigurableJsonSlurper$parse.callCurrent(Unknown Source)
+	at com.jayway.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.groovy:85)
+	at com.jayway.restassured.path.json.JsonPath$4$1.method(JsonPath.java:878)
+	at com.jayway.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:913)
+	... 25 more
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace150407470", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace150407470'><pre>com.jayway.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
+	at com.jayway.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:915)
+	at com.jayway.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:880)
+	at com.jayway.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:959)
+	at com.jayway.restassured.path.json.JsonPath.get(JsonPath.java:201)
+	at com.fanatics.seed.RestAssured.PostRequestUsingJson(RestAssured.java:272)
+	at API.ShippingAddressVerification.ShippingAddressResponseTagsVerification(ShippingAddressVerification.java:133)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:38)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:391)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading &apos;&lt;&apos;, no possible valid JSON value or punctuation could be recognized.
+	at groovy.json.JsonLexer.nextToken(JsonLexer.java:82)
+	at groovy.json.JsonLexer$nextToken.call(Unknown Source)
+	at com.jayway.restassured.internal.path.json.ConfigurableJsonSlurper.parse(ConfigurableJsonSlurper.groovy:99)
+	at com.jayway.restassured.internal.path.json.ConfigurableJsonSlurper$parse.callCurrent(Unknown Source)
+	at com.jayway.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.groovy:85)
+	at com.jayway.restassured.path.json.JsonPath$4$1.method(JsonPath.java:878)
+	at com.jayway.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:913)
+	... 25 more
+</pre></div></td>
+<td>0</td>
+<td>API.ShippingAddressVerification@1efbd816</td></tr>
+<tr>
+<td title='API.ShippingAddressVerification.ShippingAddressResponseTagsVerification()'><b>ShippingAddressResponseTagsVerification</b><br>Test class: API.ShippingAddressVerification<br>Parameters: { "ClientTransactionId":"test1234", "Address":{"AddressReferenceId":"141414", "StreetAddress":["1330 Valley lake Drive", "Apt 107"],"City":"Schaumburg", "StateOrProvinceCode":"IL","PostalCode":"60195","CountryCode":"US", "CountryName":"UnitedStates"}}, "ResponseAddresses.PostalCode"="[60195-3624]"</td>
+<td><div><pre>com.jayway.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
+	at com.jayway.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:915)
+	at com.jayway.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:880)
+	at com.jayway.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:959)
+	at com.jayway.restassured.path.json.JsonPath.get(JsonPath.java:201)
+	at com.fanatics.seed.RestAssured.PostRequestUsingJson(RestAssured.java:272)
+	at API.ShippingAddressVerification.ShippingAddressResponseTagsVerification(ShippingAddressVerification.java:133)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading &apos;&lt;&apos;, no possible valid JSON value or punctuation could be recognized.
+	at groovy.json.JsonLexer.nextToken(JsonLexer.java:82)
+	at groovy.json.JsonLexer$nextToken.call(Unknown Source)
+	at com.jayway.restassured.internal.path.json.ConfigurableJsonSlurper.parse(ConfigurableJsonSlurper.groovy:99)
+	at com.jayway.restassured.internal.path.json.ConfigurableJsonSlurper$parse.callCurrent(Unknown Source)
+	at com.jayway.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.groovy:85)
+	at com.jayway.restassured.path.json.JsonPath$4$1.method(JsonPath.java:878)
+	at com.jayway.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:913)
+	... 25 more
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace860376454", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace860376454'><pre>com.jayway.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
+	at com.jayway.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:915)
+	at com.jayway.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:880)
+	at com.jayway.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:959)
+	at com.jayway.restassured.path.json.JsonPath.get(JsonPath.java:201)
+	at com.fanatics.seed.RestAssured.PostRequestUsingJson(RestAssured.java:272)
+	at API.ShippingAddressVerification.ShippingAddressResponseTagsVerification(ShippingAddressVerification.java:133)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:38)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:391)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading &apos;&lt;&apos;, no possible valid JSON value or punctuation could be recognized.
+	at groovy.json.JsonLexer.nextToken(JsonLexer.java:82)
+	at groovy.json.JsonLexer$nextToken.call(Unknown Source)
+	at com.jayway.restassured.internal.path.json.ConfigurableJsonSlurper.parse(ConfigurableJsonSlurper.groovy:99)
+	at com.jayway.restassured.internal.path.json.ConfigurableJsonSlurper$parse.callCurrent(Unknown Source)
+	at com.jayway.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.groovy:85)
+	at com.jayway.restassured.path.json.JsonPath$4$1.method(JsonPath.java:878)
+	at com.jayway.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:913)
+	... 25 more
+</pre></div></td>
+<td>0</td>
+<td>API.ShippingAddressVerification@1efbd816</td></tr>
+<tr>
+<td title='API.ShippingAddressVerification.ShippingAddressResponseTagsVerification()'><b>ShippingAddressResponseTagsVerification</b><br>Test class: API.ShippingAddressVerification<br>Parameters: { "ClientTransactionId":"test1234", "Address":{"AddressReferenceId":"141414", "StreetAddress":["1330 Valley lake Drive", "Apt 107"],"City":"Schaumburg", "StateOrProvinceCode":"IL","PostalCode":"60195","CountryCode":"US", "CountryName":"UnitedStates"}}, "ResponseAddresses.CountryCode"="[US]"</td>
+<td><div><pre>com.jayway.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
+	at com.jayway.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:915)
+	at com.jayway.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:880)
+	at com.jayway.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:959)
+	at com.jayway.restassured.path.json.JsonPath.get(JsonPath.java:201)
+	at com.fanatics.seed.RestAssured.PostRequestUsingJson(RestAssured.java:272)
+	at API.ShippingAddressVerification.ShippingAddressResponseTagsVerification(ShippingAddressVerification.java:133)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading &apos;&lt;&apos;, no possible valid JSON value or punctuation could be recognized.
+	at groovy.json.JsonLexer.nextToken(JsonLexer.java:82)
+	at groovy.json.JsonLexer$nextToken.call(Unknown Source)
+	at com.jayway.restassured.internal.path.json.ConfigurableJsonSlurper.parse(ConfigurableJsonSlurper.groovy:99)
+	at com.jayway.restassured.internal.path.json.ConfigurableJsonSlurper$parse.callCurrent(Unknown Source)
+	at com.jayway.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.groovy:85)
+	at com.jayway.restassured.path.json.JsonPath$4$1.method(JsonPath.java:878)
+	at com.jayway.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:913)
+	... 25 more
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace809878938", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace809878938'><pre>com.jayway.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
+	at com.jayway.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:915)
+	at com.jayway.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:880)
+	at com.jayway.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:959)
+	at com.jayway.restassured.path.json.JsonPath.get(JsonPath.java:201)
+	at com.fanatics.seed.RestAssured.PostRequestUsingJson(RestAssured.java:272)
+	at API.ShippingAddressVerification.ShippingAddressResponseTagsVerification(ShippingAddressVerification.java:133)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:38)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:391)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading &apos;&lt;&apos;, no possible valid JSON value or punctuation could be recognized.
+	at groovy.json.JsonLexer.nextToken(JsonLexer.java:82)
+	at groovy.json.JsonLexer$nextToken.call(Unknown Source)
+	at com.jayway.restassured.internal.path.json.ConfigurableJsonSlurper.parse(ConfigurableJsonSlurper.groovy:99)
+	at com.jayway.restassured.internal.path.json.ConfigurableJsonSlurper$parse.callCurrent(Unknown Source)
+	at com.jayway.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.groovy:85)
+	at com.jayway.restassured.path.json.JsonPath$4$1.method(JsonPath.java:878)
+	at com.jayway.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:913)
+	... 25 more
+</pre></div></td>
+<td>0</td>
+<td>API.ShippingAddressVerification@1efbd816</td></tr>
+<tr>
+<td title='API.ShippingAddressVerification.testShippingAddressVerification()'><b>testShippingAddressVerification</b><br>Test class: API.ShippingAddressVerification<br>Parameters: { "ClientTransactionId":"test1234", "Address":{"AddressReferenceId":"141414", "StreetAddress":["1330 Valley lake Drive", "Apt 107"],"City":"Schaumburg", "StateOrProvinceCode":"IL","PostalCode":"60195","CountryCode":"US", "CountryName":"UnitedStates"}}, {"Success":true,"ResponseAddresses":[{"AddressReferenceId":"141414","StreetAddress":["1330 VALLEY LAKE DR","APT 107"],"City":"SCHAUMBURG","StateOrProvinceCode":"IL","PostalCode":"60195-3624","CountryCode":"US","CountryName":null}],"ErrorMessage":null}</td>
+<td><div><pre>java.lang.AssertionError: expected [{&quot;Success&quot;:true,&quot;ResponseAddresses&quot;:[{&quot;AddressReferenceId&quot;:&quot;141414&quot;,&quot;StreetAddress&quot;:[&quot;1330 VALLEY LAKE DR&quot;,&quot;APT 107&quot;],&quot;City&quot;:&quot;SCHAUMBURG&quot;,&quot;StateOrProvinceCode&quot;:&quot;IL&quot;,&quot;PostalCode&quot;:&quot;60195-3624&quot;,&quot;CountryCode&quot;:&quot;US&quot;,&quot;CountryName&quot;:null}],&quot;ErrorMessage&quot;:null}] but found [&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+&lt;head&gt;
+&lt;title&gt;500 - Internal server error.&lt;/title&gt;
+&lt;style type=&quot;text/css&quot;&gt;
+&lt;!--
+body{margin:0;font-size:.7em;font-family:Verdana, Arial, Helvetica, sans-serif;background:#EEEEEE;}
+fieldset{padding:0 15px 10px 15px;} 
+h1{font-size:2.4em;margin:0;color:#FFF;}
+h2{font-size:1.7em;margin:0;color:#CC0000;} 
+h3{font-size:1.2em;margin:10px 0 0 0;color:#000000;} 
+#header{width:96%;margin:0 0 0 0;padding:6px 2% 6px 2%;font-family:&quot;trebuchet MS&quot;, Verdana, sans-serif;color:#FFF;
+background-color:#555555;}
+#content{margin:0 0 0 2%;position:relative;}
+.content-container{background:#FFF;width:96%;margin-top:8px;padding:10px;position:relative;}
+--&gt;
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div id=&quot;header&quot;&gt;&lt;h1&gt;Server Error&lt;/h1&gt;&lt;/div&gt;
+&lt;div id=&quot;content&quot;&gt;
+ &lt;div class=&quot;content-container&quot;&gt;&lt;fieldset&gt;
+  &lt;h2&gt;500 - Internal server error.&lt;/h2&gt;
+  &lt;h3&gt;There is a problem with the resource you are looking for, and it cannot be displayed.&lt;/h3&gt;
+ &lt;/fieldset&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+]
+	at API.ShippingAddressVerification.testShippingAddressVerification(ShippingAddressVerification.java:86)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1111524477", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1111524477'><pre>java.lang.AssertionError: expected [{&quot;Success&quot;:true,&quot;ResponseAddresses&quot;:[{&quot;AddressReferenceId&quot;:&quot;141414&quot;,&quot;StreetAddress&quot;:[&quot;1330 VALLEY LAKE DR&quot;,&quot;APT 107&quot;],&quot;City&quot;:&quot;SCHAUMBURG&quot;,&quot;StateOrProvinceCode&quot;:&quot;IL&quot;,&quot;PostalCode&quot;:&quot;60195-3624&quot;,&quot;CountryCode&quot;:&quot;US&quot;,&quot;CountryName&quot;:null}],&quot;ErrorMessage&quot;:null}] but found [&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+&lt;head&gt;
+&lt;title&gt;500 - Internal server error.&lt;/title&gt;
+&lt;style type=&quot;text/css&quot;&gt;
+&lt;!--
+body{margin:0;font-size:.7em;font-family:Verdana, Arial, Helvetica, sans-serif;background:#EEEEEE;}
+fieldset{padding:0 15px 10px 15px;} 
+h1{font-size:2.4em;margin:0;color:#FFF;}
+h2{font-size:1.7em;margin:0;color:#CC0000;} 
+h3{font-size:1.2em;margin:10px 0 0 0;color:#000000;} 
+#header{width:96%;margin:0 0 0 0;padding:6px 2% 6px 2%;font-family:&quot;trebuchet MS&quot;, Verdana, sans-serif;color:#FFF;
+background-color:#555555;}
+#content{margin:0 0 0 2%;position:relative;}
+.content-container{background:#FFF;width:96%;margin-top:8px;padding:10px;position:relative;}
+--&gt;
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div id=&quot;header&quot;&gt;&lt;h1&gt;Server Error&lt;/h1&gt;&lt;/div&gt;
+&lt;div id=&quot;content&quot;&gt;
+ &lt;div class=&quot;content-container&quot;&gt;&lt;fieldset&gt;
+  &lt;h2&gt;500 - Internal server error.&lt;/h2&gt;
+  &lt;h3&gt;There is a problem with the resource you are looking for, and it cannot be displayed.&lt;/h3&gt;
+ &lt;/fieldset&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:178)
+	at org.testng.Assert.assertEquals(Assert.java:188)
+	at API.ShippingAddressVerification.testShippingAddressVerification(ShippingAddressVerification.java:86)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:38)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:391)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>0</td>
+<td>API.ShippingAddressVerification@1efbd816</td></tr>
+<tr>
+<td title='API.ShippingAddressVerification.testShippingAddressVerification()'><b>testShippingAddressVerification</b><br>Test class: API.ShippingAddressVerification<br>Parameters: { "ClientTransactionId":"test1234", "Address":{"AddressReferenceId":"141414", "StreetAddress":["1330 Valley lake Drive" ],"City":"Schaumburg", "StateOrProvinceCode":"IL","PostalCode":"60195","CountryCode":"US", "CountryName":"UnitedStates"}}, {"Success":true,"ResponseAddresses":[{"AddressReferenceId":"141414","StreetAddress":["1330 VALLEY LAKE DR"],"City":"SCHAUMBURG","StateOrProvinceCode":"IL","PostalCode":"60195-3639","CountryCode":"US","CountryName":null}],"ErrorMessage":null}</td>
+<td><div><pre>java.lang.AssertionError: expected [{&quot;Success&quot;:true,&quot;ResponseAddresses&quot;:[{&quot;AddressReferenceId&quot;:&quot;141414&quot;,&quot;StreetAddress&quot;:[&quot;1330 VALLEY LAKE DR&quot;],&quot;City&quot;:&quot;SCHAUMBURG&quot;,&quot;StateOrProvinceCode&quot;:&quot;IL&quot;,&quot;PostalCode&quot;:&quot;60195-3639&quot;,&quot;CountryCode&quot;:&quot;US&quot;,&quot;CountryName&quot;:null}],&quot;ErrorMessage&quot;:null}] but found [&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+&lt;head&gt;
+&lt;title&gt;500 - Internal server error.&lt;/title&gt;
+&lt;style type=&quot;text/css&quot;&gt;
+&lt;!--
+body{margin:0;font-size:.7em;font-family:Verdana, Arial, Helvetica, sans-serif;background:#EEEEEE;}
+fieldset{padding:0 15px 10px 15px;} 
+h1{font-size:2.4em;margin:0;color:#FFF;}
+h2{font-size:1.7em;margin:0;color:#CC0000;} 
+h3{font-size:1.2em;margin:10px 0 0 0;color:#000000;} 
+#header{width:96%;margin:0 0 0 0;padding:6px 2% 6px 2%;font-family:&quot;trebuchet MS&quot;, Verdana, sans-serif;color:#FFF;
+background-color:#555555;}
+#content{margin:0 0 0 2%;position:relative;}
+.content-container{background:#FFF;width:96%;margin-top:8px;padding:10px;position:relative;}
+--&gt;
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div id=&quot;header&quot;&gt;&lt;h1&gt;Server Error&lt;/h1&gt;&lt;/div&gt;
+&lt;div id=&quot;content&quot;&gt;
+ &lt;div class=&quot;content-container&quot;&gt;&lt;fieldset&gt;
+  &lt;h2&gt;500 - Internal server error.&lt;/h2&gt;
+  &lt;h3&gt;There is a problem with the resource you are looking for, and it cannot be displayed.&lt;/h3&gt;
+ &lt;/fieldset&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+]
+	at API.ShippingAddressVerification.testShippingAddressVerification(ShippingAddressVerification.java:86)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1908103022", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1908103022'><pre>java.lang.AssertionError: expected [{&quot;Success&quot;:true,&quot;ResponseAddresses&quot;:[{&quot;AddressReferenceId&quot;:&quot;141414&quot;,&quot;StreetAddress&quot;:[&quot;1330 VALLEY LAKE DR&quot;],&quot;City&quot;:&quot;SCHAUMBURG&quot;,&quot;StateOrProvinceCode&quot;:&quot;IL&quot;,&quot;PostalCode&quot;:&quot;60195-3639&quot;,&quot;CountryCode&quot;:&quot;US&quot;,&quot;CountryName&quot;:null}],&quot;ErrorMessage&quot;:null}] but found [&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+&lt;head&gt;
+&lt;title&gt;500 - Internal server error.&lt;/title&gt;
+&lt;style type=&quot;text/css&quot;&gt;
+&lt;!--
+body{margin:0;font-size:.7em;font-family:Verdana, Arial, Helvetica, sans-serif;background:#EEEEEE;}
+fieldset{padding:0 15px 10px 15px;} 
+h1{font-size:2.4em;margin:0;color:#FFF;}
+h2{font-size:1.7em;margin:0;color:#CC0000;} 
+h3{font-size:1.2em;margin:10px 0 0 0;color:#000000;} 
+#header{width:96%;margin:0 0 0 0;padding:6px 2% 6px 2%;font-family:&quot;trebuchet MS&quot;, Verdana, sans-serif;color:#FFF;
+background-color:#555555;}
+#content{margin:0 0 0 2%;position:relative;}
+.content-container{background:#FFF;width:96%;margin-top:8px;padding:10px;position:relative;}
+--&gt;
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div id=&quot;header&quot;&gt;&lt;h1&gt;Server Error&lt;/h1&gt;&lt;/div&gt;
+&lt;div id=&quot;content&quot;&gt;
+ &lt;div class=&quot;content-container&quot;&gt;&lt;fieldset&gt;
+  &lt;h2&gt;500 - Internal server error.&lt;/h2&gt;
+  &lt;h3&gt;There is a problem with the resource you are looking for, and it cannot be displayed.&lt;/h3&gt;
+ &lt;/fieldset&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:178)
+	at org.testng.Assert.assertEquals(Assert.java:188)
+	at API.ShippingAddressVerification.testShippingAddressVerification(ShippingAddressVerification.java:86)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:38)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:391)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>0</td>
+<td>API.ShippingAddressVerification@1efbd816</td></tr>
+<tr>
+<td title='API.ShippingAddressVerification.testShippingAddressVerification()'><b>testShippingAddressVerification</b><br>Test class: API.ShippingAddressVerification<br>Parameters: { "ClientTransactionId":"test1234", "Address":{"AddressReferenceId":"141414", "StreetAddress":["1330 Valley lake Drive", "Apt 107"],"City":"Mumbai", "StateOrProvinceCode":"IL","PostalCode":"60195","CountryCode":"US", "CountryName":"UnitedStates"}}, {"Success":true,"ResponseAddresses":[{"AddressReferenceId":"141414","StreetAddress":["1330 VALLEY LAKE DR","APT 107"],"City":"SCHAUMBURG","StateOrProvinceCode":"IL","PostalCode":"60195-3624","CountryCode":"US","CountryName":null}],"ErrorMessage":null}</td>
+<td><div><pre>java.lang.AssertionError: expected [{&quot;Success&quot;:true,&quot;ResponseAddresses&quot;:[{&quot;AddressReferenceId&quot;:&quot;141414&quot;,&quot;StreetAddress&quot;:[&quot;1330 VALLEY LAKE DR&quot;,&quot;APT 107&quot;],&quot;City&quot;:&quot;SCHAUMBURG&quot;,&quot;StateOrProvinceCode&quot;:&quot;IL&quot;,&quot;PostalCode&quot;:&quot;60195-3624&quot;,&quot;CountryCode&quot;:&quot;US&quot;,&quot;CountryName&quot;:null}],&quot;ErrorMessage&quot;:null}] but found [&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+&lt;head&gt;
+&lt;title&gt;500 - Internal server error.&lt;/title&gt;
+&lt;style type=&quot;text/css&quot;&gt;
+&lt;!--
+body{margin:0;font-size:.7em;font-family:Verdana, Arial, Helvetica, sans-serif;background:#EEEEEE;}
+fieldset{padding:0 15px 10px 15px;} 
+h1{font-size:2.4em;margin:0;color:#FFF;}
+h2{font-size:1.7em;margin:0;color:#CC0000;} 
+h3{font-size:1.2em;margin:10px 0 0 0;color:#000000;} 
+#header{width:96%;margin:0 0 0 0;padding:6px 2% 6px 2%;font-family:&quot;trebuchet MS&quot;, Verdana, sans-serif;color:#FFF;
+background-color:#555555;}
+#content{margin:0 0 0 2%;position:relative;}
+.content-container{background:#FFF;width:96%;margin-top:8px;padding:10px;position:relative;}
+--&gt;
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div id=&quot;header&quot;&gt;&lt;h1&gt;Server Error&lt;/h1&gt;&lt;/div&gt;
+&lt;div id=&quot;content&quot;&gt;
+ &lt;div class=&quot;content-container&quot;&gt;&lt;fieldset&gt;
+  &lt;h2&gt;500 - Internal server error.&lt;/h2&gt;
+  &lt;h3&gt;There is a problem with the resource you are looking for, and it cannot be displayed.&lt;/h3&gt;
+ &lt;/fieldset&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+]
+	at API.ShippingAddressVerification.testShippingAddressVerification(ShippingAddressVerification.java:86)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace994040971", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace994040971'><pre>java.lang.AssertionError: expected [{&quot;Success&quot;:true,&quot;ResponseAddresses&quot;:[{&quot;AddressReferenceId&quot;:&quot;141414&quot;,&quot;StreetAddress&quot;:[&quot;1330 VALLEY LAKE DR&quot;,&quot;APT 107&quot;],&quot;City&quot;:&quot;SCHAUMBURG&quot;,&quot;StateOrProvinceCode&quot;:&quot;IL&quot;,&quot;PostalCode&quot;:&quot;60195-3624&quot;,&quot;CountryCode&quot;:&quot;US&quot;,&quot;CountryName&quot;:null}],&quot;ErrorMessage&quot;:null}] but found [&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+&lt;head&gt;
+&lt;title&gt;500 - Internal server error.&lt;/title&gt;
+&lt;style type=&quot;text/css&quot;&gt;
+&lt;!--
+body{margin:0;font-size:.7em;font-family:Verdana, Arial, Helvetica, sans-serif;background:#EEEEEE;}
+fieldset{padding:0 15px 10px 15px;} 
+h1{font-size:2.4em;margin:0;color:#FFF;}
+h2{font-size:1.7em;margin:0;color:#CC0000;} 
+h3{font-size:1.2em;margin:10px 0 0 0;color:#000000;} 
+#header{width:96%;margin:0 0 0 0;padding:6px 2% 6px 2%;font-family:&quot;trebuchet MS&quot;, Verdana, sans-serif;color:#FFF;
+background-color:#555555;}
+#content{margin:0 0 0 2%;position:relative;}
+.content-container{background:#FFF;width:96%;margin-top:8px;padding:10px;position:relative;}
+--&gt;
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div id=&quot;header&quot;&gt;&lt;h1&gt;Server Error&lt;/h1&gt;&lt;/div&gt;
+&lt;div id=&quot;content&quot;&gt;
+ &lt;div class=&quot;content-container&quot;&gt;&lt;fieldset&gt;
+  &lt;h2&gt;500 - Internal server error.&lt;/h2&gt;
+  &lt;h3&gt;There is a problem with the resource you are looking for, and it cannot be displayed.&lt;/h3&gt;
+ &lt;/fieldset&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:178)
+	at org.testng.Assert.assertEquals(Assert.java:188)
+	at API.ShippingAddressVerification.testShippingAddressVerification(ShippingAddressVerification.java:86)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:38)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:391)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>0</td>
+<td>API.ShippingAddressVerification@1efbd816</td></tr>
+<tr>
+<td title='API.ShippingAddressVerification.testShippingAddressVerification()'><b>testShippingAddressVerification</b><br>Test class: API.ShippingAddressVerification<br>Parameters: { "ClientTransactionId":"test1234", "Address":{"AddressReferenceId":"141414", "StreetAddress":["1330 Valley lake Drive", "Apt 107"],"City":"Schaumburg", "StateOrProvinceCode":"ONTARIO","PostalCode":"60195","CountryCode":"US", "CountryName":"UnitedStates"}}, {"Success":true,"ResponseAddresses":[{"AddressReferenceId":"141414","StreetAddress":["1330 VALLEY LAKE DR","APT 107"],"City":"SCHAUMBURG","StateOrProvinceCode":"IL","PostalCode":"60195-3624","CountryCode":"US","CountryName":null}],"ErrorMessage":null}</td>
+<td><div><pre>java.lang.AssertionError: expected [{&quot;Success&quot;:true,&quot;ResponseAddresses&quot;:[{&quot;AddressReferenceId&quot;:&quot;141414&quot;,&quot;StreetAddress&quot;:[&quot;1330 VALLEY LAKE DR&quot;,&quot;APT 107&quot;],&quot;City&quot;:&quot;SCHAUMBURG&quot;,&quot;StateOrProvinceCode&quot;:&quot;IL&quot;,&quot;PostalCode&quot;:&quot;60195-3624&quot;,&quot;CountryCode&quot;:&quot;US&quot;,&quot;CountryName&quot;:null}],&quot;ErrorMessage&quot;:null}] but found [&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+&lt;head&gt;
+&lt;title&gt;500 - Internal server error.&lt;/title&gt;
+&lt;style type=&quot;text/css&quot;&gt;
+&lt;!--
+body{margin:0;font-size:.7em;font-family:Verdana, Arial, Helvetica, sans-serif;background:#EEEEEE;}
+fieldset{padding:0 15px 10px 15px;} 
+h1{font-size:2.4em;margin:0;color:#FFF;}
+h2{font-size:1.7em;margin:0;color:#CC0000;} 
+h3{font-size:1.2em;margin:10px 0 0 0;color:#000000;} 
+#header{width:96%;margin:0 0 0 0;padding:6px 2% 6px 2%;font-family:&quot;trebuchet MS&quot;, Verdana, sans-serif;color:#FFF;
+background-color:#555555;}
+#content{margin:0 0 0 2%;position:relative;}
+.content-container{background:#FFF;width:96%;margin-top:8px;padding:10px;position:relative;}
+--&gt;
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div id=&quot;header&quot;&gt;&lt;h1&gt;Server Error&lt;/h1&gt;&lt;/div&gt;
+&lt;div id=&quot;content&quot;&gt;
+ &lt;div class=&quot;content-container&quot;&gt;&lt;fieldset&gt;
+  &lt;h2&gt;500 - Internal server error.&lt;/h2&gt;
+  &lt;h3&gt;There is a problem with the resource you are looking for, and it cannot be displayed.&lt;/h3&gt;
+ &lt;/fieldset&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+]
+	at API.ShippingAddressVerification.testShippingAddressVerification(ShippingAddressVerification.java:86)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1922652365", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1922652365'><pre>java.lang.AssertionError: expected [{&quot;Success&quot;:true,&quot;ResponseAddresses&quot;:[{&quot;AddressReferenceId&quot;:&quot;141414&quot;,&quot;StreetAddress&quot;:[&quot;1330 VALLEY LAKE DR&quot;,&quot;APT 107&quot;],&quot;City&quot;:&quot;SCHAUMBURG&quot;,&quot;StateOrProvinceCode&quot;:&quot;IL&quot;,&quot;PostalCode&quot;:&quot;60195-3624&quot;,&quot;CountryCode&quot;:&quot;US&quot;,&quot;CountryName&quot;:null}],&quot;ErrorMessage&quot;:null}] but found [&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+&lt;head&gt;
+&lt;title&gt;500 - Internal server error.&lt;/title&gt;
+&lt;style type=&quot;text/css&quot;&gt;
+&lt;!--
+body{margin:0;font-size:.7em;font-family:Verdana, Arial, Helvetica, sans-serif;background:#EEEEEE;}
+fieldset{padding:0 15px 10px 15px;} 
+h1{font-size:2.4em;margin:0;color:#FFF;}
+h2{font-size:1.7em;margin:0;color:#CC0000;} 
+h3{font-size:1.2em;margin:10px 0 0 0;color:#000000;} 
+#header{width:96%;margin:0 0 0 0;padding:6px 2% 6px 2%;font-family:&quot;trebuchet MS&quot;, Verdana, sans-serif;color:#FFF;
+background-color:#555555;}
+#content{margin:0 0 0 2%;position:relative;}
+.content-container{background:#FFF;width:96%;margin-top:8px;padding:10px;position:relative;}
+--&gt;
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div id=&quot;header&quot;&gt;&lt;h1&gt;Server Error&lt;/h1&gt;&lt;/div&gt;
+&lt;div id=&quot;content&quot;&gt;
+ &lt;div class=&quot;content-container&quot;&gt;&lt;fieldset&gt;
+  &lt;h2&gt;500 - Internal server error.&lt;/h2&gt;
+  &lt;h3&gt;There is a problem with the resource you are looking for, and it cannot be displayed.&lt;/h3&gt;
+ &lt;/fieldset&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:178)
+	at org.testng.Assert.assertEquals(Assert.java:188)
+	at API.ShippingAddressVerification.testShippingAddressVerification(ShippingAddressVerification.java:86)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:38)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:391)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>0</td>
+<td>API.ShippingAddressVerification@1efbd816</td></tr>
+<tr>
+<td title='API.ShippingAddressVerification.testShippingAddressVerification()'><b>testShippingAddressVerification</b><br>Test class: API.ShippingAddressVerification<br>Parameters: { "ClientTransactionId":"test1234", "Address":{"AddressReferenceId":"141414", "StreetAddress":["1330 Valley lake Drive", "Apt 107"],"City":"Schaumburg", "StateOrProvinceCode":"IL","PostalCode":"400060","CountryCode":"US", "CountryName":"UnitedStates"}}, {"Success":true,"ResponseAddresses":[{"AddressReferenceId":"141414","StreetAddress":["1330 VALLEY LAKE DR","APT 107"],"City":"SCHAUMBURG","StateOrProvinceCode":"IL","PostalCode":"60195-3624","CountryCode":"US","CountryName":null}],"ErrorMessage":null}</td>
+<td><div><pre>java.lang.AssertionError: expected [{&quot;Success&quot;:true,&quot;ResponseAddresses&quot;:[{&quot;AddressReferenceId&quot;:&quot;141414&quot;,&quot;StreetAddress&quot;:[&quot;1330 VALLEY LAKE DR&quot;,&quot;APT 107&quot;],&quot;City&quot;:&quot;SCHAUMBURG&quot;,&quot;StateOrProvinceCode&quot;:&quot;IL&quot;,&quot;PostalCode&quot;:&quot;60195-3624&quot;,&quot;CountryCode&quot;:&quot;US&quot;,&quot;CountryName&quot;:null}],&quot;ErrorMessage&quot;:null}] but found [&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+&lt;head&gt;
+&lt;title&gt;500 - Internal server error.&lt;/title&gt;
+&lt;style type=&quot;text/css&quot;&gt;
+&lt;!--
+body{margin:0;font-size:.7em;font-family:Verdana, Arial, Helvetica, sans-serif;background:#EEEEEE;}
+fieldset{padding:0 15px 10px 15px;} 
+h1{font-size:2.4em;margin:0;color:#FFF;}
+h2{font-size:1.7em;margin:0;color:#CC0000;} 
+h3{font-size:1.2em;margin:10px 0 0 0;color:#000000;} 
+#header{width:96%;margin:0 0 0 0;padding:6px 2% 6px 2%;font-family:&quot;trebuchet MS&quot;, Verdana, sans-serif;color:#FFF;
+background-color:#555555;}
+#content{margin:0 0 0 2%;position:relative;}
+.content-container{background:#FFF;width:96%;margin-top:8px;padding:10px;position:relative;}
+--&gt;
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div id=&quot;header&quot;&gt;&lt;h1&gt;Server Error&lt;/h1&gt;&lt;/div&gt;
+&lt;div id=&quot;content&quot;&gt;
+ &lt;div class=&quot;content-container&quot;&gt;&lt;fieldset&gt;
+  &lt;h2&gt;500 - Internal server error.&lt;/h2&gt;
+  &lt;h3&gt;There is a problem with the resource you are looking for, and it cannot be displayed.&lt;/h3&gt;
+ &lt;/fieldset&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+]
+	at API.ShippingAddressVerification.testShippingAddressVerification(ShippingAddressVerification.java:86)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1269440197", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1269440197'><pre>java.lang.AssertionError: expected [{&quot;Success&quot;:true,&quot;ResponseAddresses&quot;:[{&quot;AddressReferenceId&quot;:&quot;141414&quot;,&quot;StreetAddress&quot;:[&quot;1330 VALLEY LAKE DR&quot;,&quot;APT 107&quot;],&quot;City&quot;:&quot;SCHAUMBURG&quot;,&quot;StateOrProvinceCode&quot;:&quot;IL&quot;,&quot;PostalCode&quot;:&quot;60195-3624&quot;,&quot;CountryCode&quot;:&quot;US&quot;,&quot;CountryName&quot;:null}],&quot;ErrorMessage&quot;:null}] but found [&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+&lt;head&gt;
+&lt;title&gt;500 - Internal server error.&lt;/title&gt;
+&lt;style type=&quot;text/css&quot;&gt;
+&lt;!--
+body{margin:0;font-size:.7em;font-family:Verdana, Arial, Helvetica, sans-serif;background:#EEEEEE;}
+fieldset{padding:0 15px 10px 15px;} 
+h1{font-size:2.4em;margin:0;color:#FFF;}
+h2{font-size:1.7em;margin:0;color:#CC0000;} 
+h3{font-size:1.2em;margin:10px 0 0 0;color:#000000;} 
+#header{width:96%;margin:0 0 0 0;padding:6px 2% 6px 2%;font-family:&quot;trebuchet MS&quot;, Verdana, sans-serif;color:#FFF;
+background-color:#555555;}
+#content{margin:0 0 0 2%;position:relative;}
+.content-container{background:#FFF;width:96%;margin-top:8px;padding:10px;position:relative;}
+--&gt;
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div id=&quot;header&quot;&gt;&lt;h1&gt;Server Error&lt;/h1&gt;&lt;/div&gt;
+&lt;div id=&quot;content&quot;&gt;
+ &lt;div class=&quot;content-container&quot;&gt;&lt;fieldset&gt;
+  &lt;h2&gt;500 - Internal server error.&lt;/h2&gt;
+  &lt;h3&gt;There is a problem with the resource you are looking for, and it cannot be displayed.&lt;/h3&gt;
+ &lt;/fieldset&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:178)
+	at org.testng.Assert.assertEquals(Assert.java:188)
+	at API.ShippingAddressVerification.testShippingAddressVerification(ShippingAddressVerification.java:86)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:38)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:391)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>0</td>
+<td>API.ShippingAddressVerification@1efbd816</td></tr>
+<tr>
+<td title='API.ShippingAddressVerification.testShippingAddressVerification()'><b>testShippingAddressVerification</b><br>Test class: API.ShippingAddressVerification<br>Parameters: { "ClientTransactionId":"test1234", "Address":{"AddressReferenceId":"141414", "StreetAddress":["1330 Valley lake Drive", "Apt 107"],"City":"Mumbai", "StateOrProvinceCode":"ON","PostalCode":"60195","CountryCode":"US", "CountryName":"UnitedStates"}}, {"Success":true,"ResponseAddresses":[{"AddressReferenceId":"141414","StreetAddress":["1330 VALLEY LAKE DR","APT 107"],"City":"SCHAUMBURG","StateOrProvinceCode":"IL","PostalCode":"60195-3624","CountryCode":"US","CountryName":null}],"ErrorMessage":null}</td>
+<td><div><pre>java.lang.AssertionError: expected [{&quot;Success&quot;:true,&quot;ResponseAddresses&quot;:[{&quot;AddressReferenceId&quot;:&quot;141414&quot;,&quot;StreetAddress&quot;:[&quot;1330 VALLEY LAKE DR&quot;,&quot;APT 107&quot;],&quot;City&quot;:&quot;SCHAUMBURG&quot;,&quot;StateOrProvinceCode&quot;:&quot;IL&quot;,&quot;PostalCode&quot;:&quot;60195-3624&quot;,&quot;CountryCode&quot;:&quot;US&quot;,&quot;CountryName&quot;:null}],&quot;ErrorMessage&quot;:null}] but found [&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+&lt;head&gt;
+&lt;title&gt;500 - Internal server error.&lt;/title&gt;
+&lt;style type=&quot;text/css&quot;&gt;
+&lt;!--
+body{margin:0;font-size:.7em;font-family:Verdana, Arial, Helvetica, sans-serif;background:#EEEEEE;}
+fieldset{padding:0 15px 10px 15px;} 
+h1{font-size:2.4em;margin:0;color:#FFF;}
+h2{font-size:1.7em;margin:0;color:#CC0000;} 
+h3{font-size:1.2em;margin:10px 0 0 0;color:#000000;} 
+#header{width:96%;margin:0 0 0 0;padding:6px 2% 6px 2%;font-family:&quot;trebuchet MS&quot;, Verdana, sans-serif;color:#FFF;
+background-color:#555555;}
+#content{margin:0 0 0 2%;position:relative;}
+.content-container{background:#FFF;width:96%;margin-top:8px;padding:10px;position:relative;}
+--&gt;
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div id=&quot;header&quot;&gt;&lt;h1&gt;Server Error&lt;/h1&gt;&lt;/div&gt;
+&lt;div id=&quot;content&quot;&gt;
+ &lt;div class=&quot;content-container&quot;&gt;&lt;fieldset&gt;
+  &lt;h2&gt;500 - Internal server error.&lt;/h2&gt;
+  &lt;h3&gt;There is a problem with the resource you are looking for, and it cannot be displayed.&lt;/h3&gt;
+ &lt;/fieldset&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+]
+	at API.ShippingAddressVerification.testShippingAddressVerification(ShippingAddressVerification.java:86)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace810303543", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace810303543'><pre>java.lang.AssertionError: expected [{&quot;Success&quot;:true,&quot;ResponseAddresses&quot;:[{&quot;AddressReferenceId&quot;:&quot;141414&quot;,&quot;StreetAddress&quot;:[&quot;1330 VALLEY LAKE DR&quot;,&quot;APT 107&quot;],&quot;City&quot;:&quot;SCHAUMBURG&quot;,&quot;StateOrProvinceCode&quot;:&quot;IL&quot;,&quot;PostalCode&quot;:&quot;60195-3624&quot;,&quot;CountryCode&quot;:&quot;US&quot;,&quot;CountryName&quot;:null}],&quot;ErrorMessage&quot;:null}] but found [&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+&lt;head&gt;
+&lt;title&gt;500 - Internal server error.&lt;/title&gt;
+&lt;style type=&quot;text/css&quot;&gt;
+&lt;!--
+body{margin:0;font-size:.7em;font-family:Verdana, Arial, Helvetica, sans-serif;background:#EEEEEE;}
+fieldset{padding:0 15px 10px 15px;} 
+h1{font-size:2.4em;margin:0;color:#FFF;}
+h2{font-size:1.7em;margin:0;color:#CC0000;} 
+h3{font-size:1.2em;margin:10px 0 0 0;color:#000000;} 
+#header{width:96%;margin:0 0 0 0;padding:6px 2% 6px 2%;font-family:&quot;trebuchet MS&quot;, Verdana, sans-serif;color:#FFF;
+background-color:#555555;}
+#content{margin:0 0 0 2%;position:relative;}
+.content-container{background:#FFF;width:96%;margin-top:8px;padding:10px;position:relative;}
+--&gt;
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div id=&quot;header&quot;&gt;&lt;h1&gt;Server Error&lt;/h1&gt;&lt;/div&gt;
+&lt;div id=&quot;content&quot;&gt;
+ &lt;div class=&quot;content-container&quot;&gt;&lt;fieldset&gt;
+  &lt;h2&gt;500 - Internal server error.&lt;/h2&gt;
+  &lt;h3&gt;There is a problem with the resource you are looking for, and it cannot be displayed.&lt;/h3&gt;
+ &lt;/fieldset&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:178)
+	at org.testng.Assert.assertEquals(Assert.java:188)
+	at API.ShippingAddressVerification.testShippingAddressVerification(ShippingAddressVerification.java:86)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:38)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:391)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>0</td>
+<td>API.ShippingAddressVerification@1efbd816</td></tr>
+<tr>
+<td title='API.ShippingAddressVerification.testShippingAddressVerification()'><b>testShippingAddressVerification</b><br>Test class: API.ShippingAddressVerification<br>Parameters: { "ClientTransactionId":"test1234", "Address":{"AddressReferenceId":"141414", "StreetAddress":["XXXX Valley lake Drive", "Apt 107"],"City":"Schaumburg", "StateOrProvinceCode":"IL","PostalCode":"60195","CountryCode":"US", "CountryName":"UnitedStates"}}, {"Success":true,"ResponseAddresses":[{"AddressReferenceId":"141414","StreetAddress":["XXXX VALLEY LAKE DR","APT 107"],"City":"SCHAUMBURG","StateOrProvinceCode":"IL","PostalCode":"60195","CountryCode":"US","CountryName":null}],"ErrorMessage":null}</td>
+<td><div><pre>java.lang.AssertionError: expected [{&quot;Success&quot;:true,&quot;ResponseAddresses&quot;:[{&quot;AddressReferenceId&quot;:&quot;141414&quot;,&quot;StreetAddress&quot;:[&quot;XXXX VALLEY LAKE DR&quot;,&quot;APT 107&quot;],&quot;City&quot;:&quot;SCHAUMBURG&quot;,&quot;StateOrProvinceCode&quot;:&quot;IL&quot;,&quot;PostalCode&quot;:&quot;60195&quot;,&quot;CountryCode&quot;:&quot;US&quot;,&quot;CountryName&quot;:null}],&quot;ErrorMessage&quot;:null}] but found [&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+&lt;head&gt;
+&lt;title&gt;500 - Internal server error.&lt;/title&gt;
+&lt;style type=&quot;text/css&quot;&gt;
+&lt;!--
+body{margin:0;font-size:.7em;font-family:Verdana, Arial, Helvetica, sans-serif;background:#EEEEEE;}
+fieldset{padding:0 15px 10px 15px;} 
+h1{font-size:2.4em;margin:0;color:#FFF;}
+h2{font-size:1.7em;margin:0;color:#CC0000;} 
+h3{font-size:1.2em;margin:10px 0 0 0;color:#000000;} 
+#header{width:96%;margin:0 0 0 0;padding:6px 2% 6px 2%;font-family:&quot;trebuchet MS&quot;, Verdana, sans-serif;color:#FFF;
+background-color:#555555;}
+#content{margin:0 0 0 2%;position:relative;}
+.content-container{background:#FFF;width:96%;margin-top:8px;padding:10px;position:relative;}
+--&gt;
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div id=&quot;header&quot;&gt;&lt;h1&gt;Server Error&lt;/h1&gt;&lt;/div&gt;
+&lt;div id=&quot;content&quot;&gt;
+ &lt;div class=&quot;content-container&quot;&gt;&lt;fieldset&gt;
+  &lt;h2&gt;500 - Internal server error.&lt;/h2&gt;
+  &lt;h3&gt;There is a problem with the resource you are looking for, and it cannot be displayed.&lt;/h3&gt;
+ &lt;/fieldset&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+]
+	at API.ShippingAddressVerification.testShippingAddressVerification(ShippingAddressVerification.java:86)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace803613049", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace803613049'><pre>java.lang.AssertionError: expected [{&quot;Success&quot;:true,&quot;ResponseAddresses&quot;:[{&quot;AddressReferenceId&quot;:&quot;141414&quot;,&quot;StreetAddress&quot;:[&quot;XXXX VALLEY LAKE DR&quot;,&quot;APT 107&quot;],&quot;City&quot;:&quot;SCHAUMBURG&quot;,&quot;StateOrProvinceCode&quot;:&quot;IL&quot;,&quot;PostalCode&quot;:&quot;60195&quot;,&quot;CountryCode&quot;:&quot;US&quot;,&quot;CountryName&quot;:null}],&quot;ErrorMessage&quot;:null}] but found [&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+&lt;head&gt;
+&lt;title&gt;500 - Internal server error.&lt;/title&gt;
+&lt;style type=&quot;text/css&quot;&gt;
+&lt;!--
+body{margin:0;font-size:.7em;font-family:Verdana, Arial, Helvetica, sans-serif;background:#EEEEEE;}
+fieldset{padding:0 15px 10px 15px;} 
+h1{font-size:2.4em;margin:0;color:#FFF;}
+h2{font-size:1.7em;margin:0;color:#CC0000;} 
+h3{font-size:1.2em;margin:10px 0 0 0;color:#000000;} 
+#header{width:96%;margin:0 0 0 0;padding:6px 2% 6px 2%;font-family:&quot;trebuchet MS&quot;, Verdana, sans-serif;color:#FFF;
+background-color:#555555;}
+#content{margin:0 0 0 2%;position:relative;}
+.content-container{background:#FFF;width:96%;margin-top:8px;padding:10px;position:relative;}
+--&gt;
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div id=&quot;header&quot;&gt;&lt;h1&gt;Server Error&lt;/h1&gt;&lt;/div&gt;
+&lt;div id=&quot;content&quot;&gt;
+ &lt;div class=&quot;content-container&quot;&gt;&lt;fieldset&gt;
+  &lt;h2&gt;500 - Internal server error.&lt;/h2&gt;
+  &lt;h3&gt;There is a problem with the resource you are looking for, and it cannot be displayed.&lt;/h3&gt;
+ &lt;/fieldset&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:178)
+	at org.testng.Assert.assertEquals(Assert.java:188)
+	at API.ShippingAddressVerification.testShippingAddressVerification(ShippingAddressVerification.java:86)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:38)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:391)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>0</td>
+<td>API.ShippingAddressVerification@1efbd816</td></tr>
+<tr>
+<td title='API.ShippingAddressVerification.testShippingAddressVerification()'><b>testShippingAddressVerification</b><br>Test class: API.ShippingAddressVerification<br>Parameters: { "ClientTransactionId":"test1234", "Address":{"AddressReferenceId":"141414", "StreetAddress":["1330 Valley lake Drive", "Apt 107"],"City":"MUMBAI", "StateOrProvinceCode":"ON","PostalCode":"L6A3H9","CountryCode":"US", "CountryName":"UnitedStates"}}, {"Success":true,"ResponseAddresses":[{"AddressReferenceId":"141414","StreetAddress":["1330 VALLEY LAKE DR","APT 107"],"City":"MUMBAI","StateOrProvinceCode":"ON","PostalCode":"L6A3H9","CountryCode":"US","CountryName":null}],"ErrorMessage":null}</td>
+<td><div><pre>java.lang.AssertionError: expected [{&quot;Success&quot;:true,&quot;ResponseAddresses&quot;:[{&quot;AddressReferenceId&quot;:&quot;141414&quot;,&quot;StreetAddress&quot;:[&quot;1330 VALLEY LAKE DR&quot;,&quot;APT 107&quot;],&quot;City&quot;:&quot;MUMBAI&quot;,&quot;StateOrProvinceCode&quot;:&quot;ON&quot;,&quot;PostalCode&quot;:&quot;L6A3H9&quot;,&quot;CountryCode&quot;:&quot;US&quot;,&quot;CountryName&quot;:null}],&quot;ErrorMessage&quot;:null}] but found [&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+&lt;head&gt;
+&lt;title&gt;500 - Internal server error.&lt;/title&gt;
+&lt;style type=&quot;text/css&quot;&gt;
+&lt;!--
+body{margin:0;font-size:.7em;font-family:Verdana, Arial, Helvetica, sans-serif;background:#EEEEEE;}
+fieldset{padding:0 15px 10px 15px;} 
+h1{font-size:2.4em;margin:0;color:#FFF;}
+h2{font-size:1.7em;margin:0;color:#CC0000;} 
+h3{font-size:1.2em;margin:10px 0 0 0;color:#000000;} 
+#header{width:96%;margin:0 0 0 0;padding:6px 2% 6px 2%;font-family:&quot;trebuchet MS&quot;, Verdana, sans-serif;color:#FFF;
+background-color:#555555;}
+#content{margin:0 0 0 2%;position:relative;}
+.content-container{background:#FFF;width:96%;margin-top:8px;padding:10px;position:relative;}
+--&gt;
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div id=&quot;header&quot;&gt;&lt;h1&gt;Server Error&lt;/h1&gt;&lt;/div&gt;
+&lt;div id=&quot;content&quot;&gt;
+ &lt;div class=&quot;content-container&quot;&gt;&lt;fieldset&gt;
+  &lt;h2&gt;500 - Internal server error.&lt;/h2&gt;
+  &lt;h3&gt;There is a problem with the resource you are looking for, and it cannot be displayed.&lt;/h3&gt;
+ &lt;/fieldset&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+]
+	at API.ShippingAddressVerification.testShippingAddressVerification(ShippingAddressVerification.java:86)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace818235372", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace818235372'><pre>java.lang.AssertionError: expected [{&quot;Success&quot;:true,&quot;ResponseAddresses&quot;:[{&quot;AddressReferenceId&quot;:&quot;141414&quot;,&quot;StreetAddress&quot;:[&quot;1330 VALLEY LAKE DR&quot;,&quot;APT 107&quot;],&quot;City&quot;:&quot;MUMBAI&quot;,&quot;StateOrProvinceCode&quot;:&quot;ON&quot;,&quot;PostalCode&quot;:&quot;L6A3H9&quot;,&quot;CountryCode&quot;:&quot;US&quot;,&quot;CountryName&quot;:null}],&quot;ErrorMessage&quot;:null}] but found [&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+&lt;head&gt;
+&lt;title&gt;500 - Internal server error.&lt;/title&gt;
+&lt;style type=&quot;text/css&quot;&gt;
+&lt;!--
+body{margin:0;font-size:.7em;font-family:Verdana, Arial, Helvetica, sans-serif;background:#EEEEEE;}
+fieldset{padding:0 15px 10px 15px;} 
+h1{font-size:2.4em;margin:0;color:#FFF;}
+h2{font-size:1.7em;margin:0;color:#CC0000;} 
+h3{font-size:1.2em;margin:10px 0 0 0;color:#000000;} 
+#header{width:96%;margin:0 0 0 0;padding:6px 2% 6px 2%;font-family:&quot;trebuchet MS&quot;, Verdana, sans-serif;color:#FFF;
+background-color:#555555;}
+#content{margin:0 0 0 2%;position:relative;}
+.content-container{background:#FFF;width:96%;margin-top:8px;padding:10px;position:relative;}
+--&gt;
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div id=&quot;header&quot;&gt;&lt;h1&gt;Server Error&lt;/h1&gt;&lt;/div&gt;
+&lt;div id=&quot;content&quot;&gt;
+ &lt;div class=&quot;content-container&quot;&gt;&lt;fieldset&gt;
+  &lt;h2&gt;500 - Internal server error.&lt;/h2&gt;
+  &lt;h3&gt;There is a problem with the resource you are looking for, and it cannot be displayed.&lt;/h3&gt;
+ &lt;/fieldset&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:178)
+	at org.testng.Assert.assertEquals(Assert.java:188)
+	at API.ShippingAddressVerification.testShippingAddressVerification(ShippingAddressVerification.java:86)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:38)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:391)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>0</td>
+<td>API.ShippingAddressVerification@1efbd816</td></tr>
+<tr>
+<td title='API.ShippingAddressVerification.testShippingAddressVerification()'><b>testShippingAddressVerification</b><br>Test class: API.ShippingAddressVerification<br>Parameters: { "ClientTransactionId":"test1234", "Address":{"AddressReferenceId":"141414", "StreetAddress":["1330 Valley lake Drive", "Apt 107"],"City":"Schaumburg", "StateOrProvinceCode":"ON","PostalCode":"L6A3H9","CountryCode":"US", "CountryName":"UnitedStates"}}, {"Success":true,"ResponseAddresses":[{"AddressReferenceId":"141414","StreetAddress":["1330 VALLEY LAKE DR","APT 107"],"City":"SCHAUMBURG","StateOrProvinceCode":"ON","PostalCode":"L6A3H9","CountryCode":"US","CountryName":null}],"ErrorMessage":null}</td>
+<td><div><pre>java.lang.AssertionError: expected [{&quot;Success&quot;:true,&quot;ResponseAddresses&quot;:[{&quot;AddressReferenceId&quot;:&quot;141414&quot;,&quot;StreetAddress&quot;:[&quot;1330 VALLEY LAKE DR&quot;,&quot;APT 107&quot;],&quot;City&quot;:&quot;SCHAUMBURG&quot;,&quot;StateOrProvinceCode&quot;:&quot;ON&quot;,&quot;PostalCode&quot;:&quot;L6A3H9&quot;,&quot;CountryCode&quot;:&quot;US&quot;,&quot;CountryName&quot;:null}],&quot;ErrorMessage&quot;:null}] but found [&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+&lt;head&gt;
+&lt;title&gt;500 - Internal server error.&lt;/title&gt;
+&lt;style type=&quot;text/css&quot;&gt;
+&lt;!--
+body{margin:0;font-size:.7em;font-family:Verdana, Arial, Helvetica, sans-serif;background:#EEEEEE;}
+fieldset{padding:0 15px 10px 15px;} 
+h1{font-size:2.4em;margin:0;color:#FFF;}
+h2{font-size:1.7em;margin:0;color:#CC0000;} 
+h3{font-size:1.2em;margin:10px 0 0 0;color:#000000;} 
+#header{width:96%;margin:0 0 0 0;padding:6px 2% 6px 2%;font-family:&quot;trebuchet MS&quot;, Verdana, sans-serif;color:#FFF;
+background-color:#555555;}
+#content{margin:0 0 0 2%;position:relative;}
+.content-container{background:#FFF;width:96%;margin-top:8px;padding:10px;position:relative;}
+--&gt;
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div id=&quot;header&quot;&gt;&lt;h1&gt;Server Error&lt;/h1&gt;&lt;/div&gt;
+&lt;div id=&quot;content&quot;&gt;
+ &lt;div class=&quot;content-container&quot;&gt;&lt;fieldset&gt;
+  &lt;h2&gt;500 - Internal server error.&lt;/h2&gt;
+  &lt;h3&gt;There is a problem with the resource you are looking for, and it cannot be displayed.&lt;/h3&gt;
+ &lt;/fieldset&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+]
+	at API.ShippingAddressVerification.testShippingAddressVerification(ShippingAddressVerification.java:86)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1706115040", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1706115040'><pre>java.lang.AssertionError: expected [{&quot;Success&quot;:true,&quot;ResponseAddresses&quot;:[{&quot;AddressReferenceId&quot;:&quot;141414&quot;,&quot;StreetAddress&quot;:[&quot;1330 VALLEY LAKE DR&quot;,&quot;APT 107&quot;],&quot;City&quot;:&quot;SCHAUMBURG&quot;,&quot;StateOrProvinceCode&quot;:&quot;ON&quot;,&quot;PostalCode&quot;:&quot;L6A3H9&quot;,&quot;CountryCode&quot;:&quot;US&quot;,&quot;CountryName&quot;:null}],&quot;ErrorMessage&quot;:null}] but found [&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+&lt;head&gt;
+&lt;title&gt;500 - Internal server error.&lt;/title&gt;
+&lt;style type=&quot;text/css&quot;&gt;
+&lt;!--
+body{margin:0;font-size:.7em;font-family:Verdana, Arial, Helvetica, sans-serif;background:#EEEEEE;}
+fieldset{padding:0 15px 10px 15px;} 
+h1{font-size:2.4em;margin:0;color:#FFF;}
+h2{font-size:1.7em;margin:0;color:#CC0000;} 
+h3{font-size:1.2em;margin:10px 0 0 0;color:#000000;} 
+#header{width:96%;margin:0 0 0 0;padding:6px 2% 6px 2%;font-family:&quot;trebuchet MS&quot;, Verdana, sans-serif;color:#FFF;
+background-color:#555555;}
+#content{margin:0 0 0 2%;position:relative;}
+.content-container{background:#FFF;width:96%;margin-top:8px;padding:10px;position:relative;}
+--&gt;
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div id=&quot;header&quot;&gt;&lt;h1&gt;Server Error&lt;/h1&gt;&lt;/div&gt;
+&lt;div id=&quot;content&quot;&gt;
+ &lt;div class=&quot;content-container&quot;&gt;&lt;fieldset&gt;
+  &lt;h2&gt;500 - Internal server error.&lt;/h2&gt;
+  &lt;h3&gt;There is a problem with the resource you are looking for, and it cannot be displayed.&lt;/h3&gt;
+ &lt;/fieldset&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:178)
+	at org.testng.Assert.assertEquals(Assert.java:188)
+	at API.ShippingAddressVerification.testShippingAddressVerification(ShippingAddressVerification.java:86)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:38)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:391)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>0</td>
+<td>API.ShippingAddressVerification@1efbd816</td></tr>
+<tr>
+<td title='API.ShippingAddressVerification.testShippingAddressVerification()'><b>testShippingAddressVerification</b><br>Test class: API.ShippingAddressVerification<br>Parameters: { "ClientTransactionId":"test1234", "Address":{"AddressReferenceId":"141414", "StreetAddress":["1330 Norwalk Drive", "Apt 107"],"City":"Schaumburg", "StateOrProvinceCode":"IL","PostalCode":"60195","CountryCode":"US", "CountryName":"UnitedStates"}}, {"Success":true,"ResponseAddresses":[{"AddressReferenceId":"141414","StreetAddress":["1330 NORWALK DR","APT 107"],"City":"SCHAUMBURG","StateOrProvinceCode":"IL","PostalCode":"60195","CountryCode":"US","CountryName":null}],"ErrorMessage":null}</td>
+<td><div><pre>java.lang.AssertionError: expected [{&quot;Success&quot;:true,&quot;ResponseAddresses&quot;:[{&quot;AddressReferenceId&quot;:&quot;141414&quot;,&quot;StreetAddress&quot;:[&quot;1330 NORWALK DR&quot;,&quot;APT 107&quot;],&quot;City&quot;:&quot;SCHAUMBURG&quot;,&quot;StateOrProvinceCode&quot;:&quot;IL&quot;,&quot;PostalCode&quot;:&quot;60195&quot;,&quot;CountryCode&quot;:&quot;US&quot;,&quot;CountryName&quot;:null}],&quot;ErrorMessage&quot;:null}] but found [&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+&lt;head&gt;
+&lt;title&gt;500 - Internal server error.&lt;/title&gt;
+&lt;style type=&quot;text/css&quot;&gt;
+&lt;!--
+body{margin:0;font-size:.7em;font-family:Verdana, Arial, Helvetica, sans-serif;background:#EEEEEE;}
+fieldset{padding:0 15px 10px 15px;} 
+h1{font-size:2.4em;margin:0;color:#FFF;}
+h2{font-size:1.7em;margin:0;color:#CC0000;} 
+h3{font-size:1.2em;margin:10px 0 0 0;color:#000000;} 
+#header{width:96%;margin:0 0 0 0;padding:6px 2% 6px 2%;font-family:&quot;trebuchet MS&quot;, Verdana, sans-serif;color:#FFF;
+background-color:#555555;}
+#content{margin:0 0 0 2%;position:relative;}
+.content-container{background:#FFF;width:96%;margin-top:8px;padding:10px;position:relative;}
+--&gt;
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div id=&quot;header&quot;&gt;&lt;h1&gt;Server Error&lt;/h1&gt;&lt;/div&gt;
+&lt;div id=&quot;content&quot;&gt;
+ &lt;div class=&quot;content-container&quot;&gt;&lt;fieldset&gt;
+  &lt;h2&gt;500 - Internal server error.&lt;/h2&gt;
+  &lt;h3&gt;There is a problem with the resource you are looking for, and it cannot be displayed.&lt;/h3&gt;
+ &lt;/fieldset&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+]
+	at API.ShippingAddressVerification.testShippingAddressVerification(ShippingAddressVerification.java:86)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1502438916", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1502438916'><pre>java.lang.AssertionError: expected [{&quot;Success&quot;:true,&quot;ResponseAddresses&quot;:[{&quot;AddressReferenceId&quot;:&quot;141414&quot;,&quot;StreetAddress&quot;:[&quot;1330 NORWALK DR&quot;,&quot;APT 107&quot;],&quot;City&quot;:&quot;SCHAUMBURG&quot;,&quot;StateOrProvinceCode&quot;:&quot;IL&quot;,&quot;PostalCode&quot;:&quot;60195&quot;,&quot;CountryCode&quot;:&quot;US&quot;,&quot;CountryName&quot;:null}],&quot;ErrorMessage&quot;:null}] but found [&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+&lt;head&gt;
+&lt;title&gt;500 - Internal server error.&lt;/title&gt;
+&lt;style type=&quot;text/css&quot;&gt;
+&lt;!--
+body{margin:0;font-size:.7em;font-family:Verdana, Arial, Helvetica, sans-serif;background:#EEEEEE;}
+fieldset{padding:0 15px 10px 15px;} 
+h1{font-size:2.4em;margin:0;color:#FFF;}
+h2{font-size:1.7em;margin:0;color:#CC0000;} 
+h3{font-size:1.2em;margin:10px 0 0 0;color:#000000;} 
+#header{width:96%;margin:0 0 0 0;padding:6px 2% 6px 2%;font-family:&quot;trebuchet MS&quot;, Verdana, sans-serif;color:#FFF;
+background-color:#555555;}
+#content{margin:0 0 0 2%;position:relative;}
+.content-container{background:#FFF;width:96%;margin-top:8px;padding:10px;position:relative;}
+--&gt;
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div id=&quot;header&quot;&gt;&lt;h1&gt;Server Error&lt;/h1&gt;&lt;/div&gt;
+&lt;div id=&quot;content&quot;&gt;
+ &lt;div class=&quot;content-container&quot;&gt;&lt;fieldset&gt;
+  &lt;h2&gt;500 - Internal server error.&lt;/h2&gt;
+  &lt;h3&gt;There is a problem with the resource you are looking for, and it cannot be displayed.&lt;/h3&gt;
+ &lt;/fieldset&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:178)
+	at org.testng.Assert.assertEquals(Assert.java:188)
+	at API.ShippingAddressVerification.testShippingAddressVerification(ShippingAddressVerification.java:86)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:38)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:391)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>0</td>
+<td>API.ShippingAddressVerification@1efbd816</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,62 @@
+qc3:
+   /partnerid/12815:
+                   creditCardNumber: //*[@id="CardNumber"]
+                   expiryMonth: //*[@id="ExpirationMonth"]
+                   expiryYear: //*[@id="ExpirationYear"]
+                   securityCode: //*[@id="CVV2"]
+                   submitPayment: //*[@id="PaymentSubmit"]
+   /partnerid/12730:
+                   creditCardNumber: //*[@id="CardNumber"]
+                   expiryMonth: //*[@id="ExpirationMonth"]
+                   expiryYear: //*[@id="ExpirationYear"]
+                   securityCode: //*[@id="CVV2"]
+                   submitPayment: //*[@id="PaymentSubmit"]
+   /partnerid/13670:
+                   creditCardNumber: //*[@id="CardNumber"]
+                   expiryMonth: //*[@id="ExpirationMonth"]
+                   expiryYear: //*[@id="ExpirationYear"]
+                   securityCode: //*[@id="CVV2"]
+                   submitPayment: //*[@id="PaymentSubmit"]
+   /partnerid/14251:
+                   creditCardNumber: //*[@id="CardNumber"]
+                   expiryMonth: //*[@id="ExpirationMonth"]
+                   expiryYear: //*[@id="ExpirationYear"]
+                   securityCode: //*[@id="CVV2"]
+                   submitPayment: //*[@id="PaymentSubmit"]
+   /partnerid/10005:
+                   creditCardNumber: //*[@id="CardNumber"]
+                   expiryMonth: //*[@id="ExpirationMonth"]
+                   expiryYear: //*[@id="ExpirationYear"]
+                   securityCode: //*[@id="CVV2"]
+                   submitPayment: //*[@id="PaymentSubmit"]
+qc2:
+   /partnerid/12815:
+                   creditCardNumber: //*[@id="CardNumber"]
+                   expiryMonth: //*[@id="ExpirationMonth"]
+                   expiryYear: //*[@id="ExpirationYear"]
+                   securityCode: //*[@id="CVV2"]
+                   submitPayment: //*[@id="PaymentSubmit"]
+   /partnerid/12730:
+                   creditCardNumber: //*[@id="CardNumber"]
+                   expiryMonth: //*[@id="ExpirationMonth"]
+                   expiryYear: //*[@id="ExpirationYear"]
+                   securityCode: //*[@id="CVV2"]
+                   submitPayment: //*[@id="PaymentSubmit"]
+   /partnerid/13670:
+                   creditCardNumber: //*[@id="CardNumber"]
+                   expiryMonth: //*[@id="ExpirationMonth"]
+                   expiryYear: //*[@id="ExpirationYear"]
+                   securityCode: //*[@id="CVV2"]
+                   submitPayment: //*[@id="PaymentSubmit"]
+   /partnerid/14251:
+                   creditCardNumber: //*[@id="CardNumber"]
+                   expiryMonth: //*[@id="ExpirationMonth"]
+                   expiryYear: //*[@id="ExpirationYear"]
+                   securityCode: //*[@id="CVV2"]
+                   submitPayment: //*[@id="PaymentSubmit"]
+   /partnerid/10005:
+                   creditCardNumber: //*[@id="CardNumber"]
+                   expiryMonth: //*[@id="ExpirationMonth"]
+                   expiryYear: //*[@id="ExpirationYear"]
+                   securityCode: //*[@id="CVV2"]
+                   submitPayment: //*[@id="PaymentSubmit"]

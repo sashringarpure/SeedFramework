@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="CheckoutSuite">
+  <parameter name="env" value="browserStack"></parameter>	
+  <test name="Checkout">
+    <packages>
+      <package name="Specs" />
+    </packages>
+  </test> 
+</suite>
+ 
+
+<!--   
+<suite name="ShippingAddressVerificationSuite" parallel="tests">
+  <listeners>
+    <listener class-name="Logger.CustomLogger"></listener>
+  </listeners>	
+  <test name="ShippingAddressVerification" group-by-instances="true">
+    <packages>
+      <package name="API" />
+    </packages>
+  </test> 
+</suite> 
+-->

@@ -1,0 +1,7 @@
+capability_OSX_Safari: 
+                     browser: safari
+                     browser_version: 6
+                     os: OSX
+                     os_version: Lion
+                     debug: true
+                     local: true

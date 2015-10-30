@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [ShippingAddressVerificationSuite]" parallel="tests">
+  <listeners>
+    <listener class-name="Logger.CustomLogger"/>
+  </listeners>
+  <test name="ShippingAddressVerification(failed)" parallel="tests">
+    <classes>
+      <class name="API.ShippingAddressVerification">
+        <methods>
+          <include name="closeConn"/>
+          <include name="ShippingAddressResponseTagsVerification" invocation-numbers="0 1 2 3 4"/>
+          <include name="OpenConn"/>
+          <include name="testShippingAddressVerification" invocation-numbers="0 1 2 3 4 5 6 7 8 9"/>
+        </methods>
+      </class> <!-- API.ShippingAddressVerification -->
+    </classes>
+  </test> <!-- ShippingAddressVerification(failed) -->
+</suite> <!-- Failed suite [ShippingAddressVerificationSuite] -->

@@ -1,0 +1,22 @@
+qc3:
+   /partnerid/12815:
+                   checkoutAsGuest: GuestCheckout
+   /partnerid/12730:
+                   checkoutAsGuest: GuestCheckout
+   /partnerid/13670:
+                   checkoutAsGuest: GuestCheckout_Submit
+   /partnerid/14251:
+                   checkoutAsGuest: GuestCheckout
+   /partnerid/10005:
+                   checkoutAsGuest: GuestCheckout
+qc2:
+   /partnerid/12815:
+                   checkoutAsGuest: GuestCheckout
+   /partnerid/12730:
+                   checkoutAsGuest: GuestCheckout
+   /partnerid/13670:
+                   checkoutAsGuest: GuestCheckout_Submit
+   /partnerid/14251:
+                   checkoutAsGuest: GuestCheckout
+   /partnerid/10005:
+                   checkoutAsGuest: GuestCheckout
